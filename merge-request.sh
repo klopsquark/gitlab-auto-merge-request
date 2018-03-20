@@ -21,7 +21,8 @@ BODY="{
     \"target_branch\": \"${TARGET_BRANCH}\",
     \"remove_source_branch\": false,
     \"title\": \"WIP: ${CI_COMMIT_REF_NAME}\",
-    \"assignee_id\":\"${GITLAB_USER_ID}\"
+    \"assignee_id\":\"${GITLAB_USER_ID}\",
+    \"merge_when_pipeline_succeeds\": true
 }";
 
 # Require a list of all the merge request and take a look if there is already
